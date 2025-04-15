@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Alquiler y Reserva de Autos</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Login -->
+  <div id="loginScreen">
+    <h2>🚘 Iniciar Sesión</h2>
+    <input type="text" id="loginUser" placeholder="Usuario">
+    <input type="password" id="loginPass" placeholder="Contraseña">
+    <button onclick="login()">Ingresar</button>
+    <p>¿No tienes cuenta? <a href="#" onclick="showRegister()">Regístrate aquí</a></p>
+  </div>
+
+  <!-- Registro -->
+  <div id="registerScreen" style="display:none">
+    <h2>📝 Registro</h2>
+    <input type="text" id="regName" placeholder="Nombre de usuario">
+    <input type="number" id="regAge" placeholder="Edad">
+    <input type="password" id="regPass" placeholder="Contraseña (solo números)">
+    <button onclick="register()">Registrarse</button>
+    <p><a href="#" onclick="showLogin()">Volver al Login</a></p>
+  </div>
+
+  <!-- Pantalla principal -->
+  <div id="mainScreen" style="display:none">
+    <header>
+      <h2>🚗 Vehículos Disponibles</h2>
+      <input type="text" id="searchInput" onkeyup="searchCars()" placeholder="Buscar vehículo...">
+      <button onclick="viewHistory()">📝 Ver Historial</button>
+    </header>
+
+    <div id="carList"></div>
+    <div id="formScreen"></div>
+    <div id="paymentScreen"></div>
+    <div id="historyList" style="margin-top:20px"></div>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

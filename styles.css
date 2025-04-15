@@ -1,0 +1,92 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #0a0f26;
+  color: #ffffff;
+  margin: 0;
+  padding: 20px;
+}
+
+h2 {
+  color: #f7b731;
+  text-align: center;
+}
+
+input, button {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  width: 80%;
+  max-width: 350px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+}
+
+input {
+  background: #ffffff;
+  color: #000;
+}
+
+button {
+  background: #f7b731;
+  color: #000;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #fed330;
+}
+
+a {
+  color: #4cd137;
+  text-decoration: none;
+}
+
+header {
+  text-align: center;
+}
+
+.car-card {
+  background: #1e272e;
+  margin: 15px auto;
+  padding: 15px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.car-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+#formScreen, #paymentScreen {
+  background: #1e272e;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+}
+
+#paymentOptions img {
+  width: 80px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  background: #2f3640;
+  margin: 8px;
+  padding: 10px;
+  border-radius: 5px;
+}
